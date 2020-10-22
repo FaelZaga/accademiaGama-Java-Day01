@@ -44,9 +44,15 @@ public class Door {
     public boolean checkDimensions(double dimensionX, double getDimensionY, double getDimensionZ) {
         if (dimensionX < 0 || getDimensionY < 0  || getDimensionZ < 0) {
             return false;
-        }else{
+        }
+        return true;
+    }
+
+    public boolean getDoorOpen() {
+        if (isOpen) {
             return true;
         }
+        return false;
     }
 
     @Override
